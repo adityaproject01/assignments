@@ -621,7 +621,7 @@
   }
 } 
 /* mobile */
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .main {
     overflow: scroll;
     width: 100dvw;
@@ -680,8 +680,9 @@
     color: black;
   }
   .dropdown {
+    flex-wrap: wrap;
     width: 100%;
-    height: 10%;
+    height: 100%;
     color:black ;
     z-index: 5;
     display: flex;
@@ -708,12 +709,13 @@
 
 
   .dropdown-content {
+    box-sizing: border-box;
     overflow: scroll;
     padding: 10px;
-    margin-top: 50px;
+    height: 100%;
     display: none;
     flex-direction: column;
-    position: absolute;
+
     background-color: #ffffff;
     width: 100%;
   }
@@ -723,6 +725,7 @@
     word-break: break-all;
     color: #131212;
     height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -809,19 +812,22 @@
     width: 100px;
     height: 40px;
   }
+  .btnbotton{
+    overflow: ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-top: 100px;
+    width: 100%;
+  }
   .resbtn1 {
-    position: absolute;
-    bottom: 10px;
+    margin-bottom: 140px;
     font-family: "DM Sans", sans-serif;
     font-size: 16px;
     line-height: 25px;
-    color: #272f40;
     font-weight: 400;
     margin-left: 10px;
-    background: #55ec9f;
-    border-radius: 30px;
-    width: 120px;
-    height: 40px;
     background: none;
     border: 2px solid rgb(0, 0, 0);
     border-radius: 30px;
@@ -832,9 +838,6 @@
    }
 
    .resbtn2 {
-    position: absolute;
-    bottom: 10px;
-    right: 80px;
      font-family: "DM Sans", sans-serif;
      font-size: 14px;
      line-height: 25px;
@@ -846,6 +849,7 @@
      border-radius: 20px;
      width: 100px;
      height: 40px;
+     
    }
 
   
@@ -1243,4 +1247,4 @@
     text-decoration: none;
     color: orange;
   }
-}  */
+} 
