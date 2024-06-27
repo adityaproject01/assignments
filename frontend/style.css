@@ -2,9 +2,13 @@
   box-sizing: border-box;
   margin: 0px;
   .spansub{
-    background-color: #E4E6ED;
-    color: #4976F3;
-    padding: 5px;
+    font-size: 15px;
+    line-height: 1;
+    background-color: #e4e7ec !important;
+    padding: .2rem .5rem;
+    color: #3569f3;
+    font-family: input-mono, monospace;
+    font-weight: 400;
   }
 }
 /* laptop */
@@ -778,6 +782,9 @@
     padding: 10px;
     white-space: nowrap;
   }
+  .dropdown-content a:hover {
+    color: #131212;
+}
 
   
   .navRight ul {
@@ -879,6 +886,7 @@
     align-content: flex-start;
   }
   .headerContext {
+    margin-top: 15px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
@@ -960,14 +968,24 @@
     font-family: "DM Sans", sans-serif;
     border: 1px solid black;
     display: table-row;
+    
   }
   th {
+    padding: 16px;
     border: 1px solid black;
-
     font-family: Poppins, sans-serif;
     font-weight: 600;
     font-weight: 15px;
-    padding: 16px;
+ 
+  }
+  table ul{
+    word-wrap: break-word;
+    word-break: break-all;
+    font-size: 18px;
+    padding-left: 13px;
+  }
+  table li{
+    padding: 5px;
   }
   td {
     width: 0%;
@@ -977,7 +995,7 @@
   }
   .pre{
     color: white;
-    width: 91%;
+    width: 95%;
     overflow-x: scroll;
     border-radius: 10px;
     background: #262E40;
@@ -989,7 +1007,7 @@
     justify-content: flex-end;
     color: #272f40;
     font-size: 18px;
-    width: 100%;
+    width: 95%;
     line-height: 25px;
     font-family: "DM Sans", sans-serif;
     font-weight: 400;

@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap"
         rel="stylesheet" />
+
 </head>
 
 <body>
@@ -353,7 +354,7 @@
 
                 <button class="btn1">Login</button>
                 <button id="btn2" class="btn2"><b>Try free</b></button>
-                <button onclick="handleClicked()" class="toggleBtn"><img src="./assets/toggle.svg" id="toggleBtn"
+                <button onclick="{handleToggle()}" class="toggleBtn"><img src="./assets/toggle.svg" id="toggleBtn"
                         alt="toggleBtn"></button>
             </div>
         </nav>
@@ -494,21 +495,26 @@
                         <tr>
                             <td>
                                 <ul>
-                                    <li>Simplicity: Automatically syncs the model and the view, which can simplify the
+                                    <li><strong> Simplicity :</strong> Automatically syncs the model and the view, which
+                                        can simplify the
                                         codebase for small to medium-sized projects by reducing the boilerplate needed
                                         to update the UI.</li>
-                                    <li>Rapid Development: Allows for quicker prototyping and development, as you don't
+                                    <li><strong>Rapid Development:</strong> Allows for quicker prototyping and
+                                        development, as you don't
                                         need to write additional logic to ensure the UI and state are in sync.</li>
-                                    <li>Ease of Use: Beneficial for applications with heavy forms and data entry; the UI
+                                    <li>Ease of Use:</strong> Beneficial for applications with heavy forms and
+                                        data entry; the UI
                                         can react instantly to user input and update the model without extra code.</li>
                                 </ul>
                             </td>
                             <td>
                                 <ul>
-                                    <li>Performance: In large and complex applications, two-way data binding can lead to
+                                    <li><strong>Performance</strong>: In large and complex applications, two-way data
+                                        binding can lead to
                                         performance bottlenecks. Watching for changes in both directions requires more
                                         resources, which can slow down the app as the number of bindings increases.</li>
-                                    <li>Predictability: Can make state management more complex and less predictable, as
+                                    <li><strong>Predictability</strong>: Can make state management more complex and less
+                                        predictable, as
                                         changes in the UI can directly affect the model and vice versa, potentially
                                         leading to harder-to-track bugs.</li>
                                 </ul>
@@ -526,21 +532,26 @@
                         <tr>
                             <td>
                                 <ul>
-                                    <li>Maintainability: By enforcing a single direction for data to flow (down from
+                                    <li><strong>Maintainability:</strong> By enforcing a single direction for data to
+                                        flow (down from
                                         parent to child components), applications become more predictable and easier to
                                         debug.
-                                    <li>Performance: Generally offers better performance for complex applications, as
+                                    <li><strong>Performance:</strong> Generally offers better performance for complex
+                                        applications, as
                                         the unidirectional flow simplifies change detection and updates.
-                                    <li>Scalability: The modular nature of React components, combined with one-way data
+                                    <li><strong>Scalability: </strong>The modular nature of React components, combined
+                                        with one-way data
                                         flow, makes it easier to scale applications and manage large codebases.
                                 </ul>
                             </td>
                             <td>
                                 <ul>
-                                    <li>Boilerplate: Can require more boilerplate code to implement features that
+                                    <li><strong>Boilerplate:</strong> Can require more boilerplate code to implement
+                                        features that
                                         automatically update the UI in response to model changes, as you must explicitly
                                         manage state and props.</li>
-                                    <li>Learning Curve: The concepts of state management and unidirectional data flow
+                                    <li><strong>Learning Curve:</strong> The concepts of state management and
+                                        unidirectional data flow
                                         can introduce a learning curve, especially for developers accustomed to two-way
                                         data binding frameworks.</li>
                                 </ul>
@@ -716,7 +727,7 @@
             <h3 class="fotter1h3">Related Resources</h3>
             <div class="fotter1boxs">
                 <div class="fotter1box">
-                    <img src="/assets/asset 11.webp" alt="banner" />
+                    <img src="./assets/asset 11.webp" alt="banner" />
                 </div>
                 <h5>React.js vs. Next.js: Which Framework is Better, and When?</h5>
                 <p>Read more</p>
@@ -827,7 +838,8 @@
         </div>
     </div>
     <script>
-        function handleClicked() {
+        function handleToggle() {
+
             let toggle = document.getElementById("resBox");
             let btn = document.getElementById("btn2");
             let img = document.getElementById("img1")
@@ -838,8 +850,7 @@
                 btn.style.display = "none"
                 img.src = "./assets/asset1.svg";
                 nav.style.background = "white"
-                tglBtn.src = "./assets/closetoggle.svg"\
-
+                tglBtn.src = "./assets/closetoggle.svg"
 
             } else {
                 tglBtn.src = "./assets/toggle.svg"

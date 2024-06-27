@@ -1,0 +1,20 @@
+# Ignore database files
+db.sqlite3
+
+# Ignore static files directory (if using collectstatic for deployment)
+static/
+
+# Ignore media files directory
+media/
+
+# Ignore environment-specific settings
+python/assignment1/bookDanjo/envbooks/*
+python/assignment2/envtodolist/*
+
+
+
+# Ignore IDE and editor specific files
+*.pyc
+*.swp
+.vscode/
+.idea/
