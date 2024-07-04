@@ -522,6 +522,7 @@
       width: 100%;
       height: 37.6%;
       background: #3469f2;
+      padding-bottom: 30px;
     }
     .fotter2top {
       display: flex;
@@ -588,6 +589,16 @@
       line-height: 27px;
       font-weight: 700;
       font-size: 16px;
+
+    }
+    .fotters3Left{
+      padding-top: 50px;
+padding-left:20px;
+      background: #262E40;
+    }
+    .fotters3Left img{
+      width: 100px;
+      background: #262E40;
     }
     .fotters3Right {
       align-content: space-around;
@@ -596,33 +607,33 @@
       flex-wrap: wrap;
       justify-content: center;
       flex-direction: row;
-      margin-top: 50px;
       width: 100%;
       height: 100%;
       color: white;
     }
   
     .fotters3RightR1 {
-      
+      margin: 10px;
       height: 100%;
     }
     .R1{
-      width: 50%;
+      width: auto;
       order: 1;
     }
     .R2{
-      width: 91%;
+      width: auto;
       order: 3;
     }
     .R3{
-      width: 40%;
+      width: auto;
   
       order: 2;
     }
     .R4{
-      width: 91%;
+      width: auto;
       order: 4;
     }
+   
     .fotters3RightR1 span {
       width: 10%;
       display: flex;
@@ -1789,7 +1800,6 @@
     width: 100%;
     padding-top: 50px;
     height: auto;
- 
     background: #fbfbf8;
     justify-content: center;
     align-items: stretch;
@@ -1910,6 +1920,11 @@
     font-weight: 700;
     font-size: 16px;
   }
+  .fotters3Left{
+    padding-top: 50px;
+padding-left:20px;
+    background: #262E40;
+  }
   .fotters3Right {
     align-content: space-around;
     background: #262E40;
@@ -1917,31 +1932,29 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    margin-top: 50px;
     width: 100%;
     height: 100%;
     color: white;
   }
 
   .fotters3RightR1 {
-    
     height: 100%;
   }
   .R1{
-    width: 50%;
+    width: auto;
     order: 1;
   }
   .R2{
-    width: 91%;
+    width: auto;
     order: 3;
   }
   .R3{
-    width: 40%;
+    width: auto;
 
     order: 2;
   }
   .R4{
-    width: 91%;
+    width: auto;
     order: 4;
   }
   .fotters3RightR1 span {
@@ -2471,7 +2484,6 @@
     width: 100%;
     padding-top: 50px;
     height: auto;
- 
     background: #fbfbf8;
     justify-content: center;
     align-items: stretch;
@@ -2592,6 +2604,11 @@
     font-weight: 700;
     font-size: 16px;
   }
+  .fotters3Left{
+    padding-top: 50px;
+padding-left:20px;
+    background: #262E40;
+  }
   .fotters3Right {
     align-content: space-around;
     background: #262E40;
@@ -2599,7 +2616,6 @@
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row;
-    margin-top: 50px;
     width: 100%;
     height: 100%;
     color: white;
@@ -2610,20 +2626,20 @@
     height: 100%;
   }
   .R1{
-    width: 50%;
+    width: auto;
     order: 1;
   }
   .R2{
-    width: 91%;
+    width: auto;
     order: 3;
   }
   .R3{
-    width: 40%;
+    width: auto;
 
     order: 2;
   }
   .R4{
-    width: 91%;
+    width: auto;
     order: 4;
   }
   .fotters3RightR1 span {
@@ -2772,13 +2788,11 @@
   
     .dropdown-content-Group {
       display: flex;
-      flex-wrap: wrap;
       width: 100%;
       height: 100%;
-      justify-content: space-around;
+      flex-wrap: nowrap;
       align-items: center;
-      justify-content: flex-start;
-    }
+  }
     .dropdown-content-Group-img {
       width: 25px;
       height: 10px;
@@ -3409,13 +3423,11 @@
   
     .dropdown-content-Group {
       display: flex;
-      flex-wrap: wrap;
       width: 100%;
       height: 100%;
-      justify-content: space-around;
+      flex-wrap: nowrap;
       align-items: center;
-      justify-content: flex-start;
-    }
+  }
     .dropdown-content-Group-img {
       width: 25px;
       height: 10px;
@@ -3717,7 +3729,6 @@
     }
     .fotter1 {
       position: relative;
-    
       display: flex;
       flex-wrap: wrap;
       width: 100%;
@@ -3872,27 +3883,29 @@
       color: white;
       width: 100%;
       height: 50%;
-      background: #131212;
+      background: #272F40;
     }
     .fotter3 {
       padding-left: 80px;
-      padding-right: 80px;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
+        padding-right: 80px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        align-content: flex-start;    
     }
-    .fotters3Left {
-      width: 20%;
-      height: 100%;
+    .fotters3Left{
+      padding-top: 10px;
+      width: 30%;
+      background: #262E40;
     }
     .fotters3Right {
       display: flex;
       flex-wrap: wrap;
         flex-direction: column;
-        width: 80%;
+        width: 70%;
         height: 100%;
         color: white;
     }
@@ -3930,7 +3943,7 @@
     .fotters4 {
       width: 100%;
       height: 10%;
-      background: #131212;
+      background: #272F40;
       flex-wrap: wrap;
       display: flex;
       justify-content: center;
