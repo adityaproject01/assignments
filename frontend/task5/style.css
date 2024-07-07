@@ -1,4 +1,86 @@
-.bg{
+
+@media (min-width: 576px) { 
+    .bg{
+        font-family: "Dosis", sans-serif;
+    background-image: url("./asset/bg.jpg");
+    width: 100%;
+    height: 100dvh;
+    object-fit: fill;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.card1{
+    width: 65% !important;
+    height: 75%;
+    background: white;
+}
+.posepic{
+    border-radius: 10px;
+    height: 95%;
+    margin-left: 0% !important;
+    min-width: auto;
+}
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .bg{
+    
+    background-image: url("./asset/bg.jpg");
+    width: 100%;
+    height: 100dvh;
+    object-fit: fill;
+    background-size: cover;
+    font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.card1{
+    width: 65% !important;
+    height: 75%;
+    background: white;
+}
+.posepic{
+    padding: 0px;
+    margin: 0px !important;
+    border-radius: 10px;
+    width: 180px;
+    height: 100%;
+}
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .bg{
+    background-image: url("./asset/bg.jpg");
+    width: 100%;
+    height: 100dvh;
+    object-fit: fill;
+    font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background-size: cover;
+}
+.card1{
+    width: 65% !important;
+    height: 75%;
+    background: white;
+}
+.posepic{
+    border-radius: 10px;
+    height: 95%;
+    margin-left: -40% !important;
+    width: 210px;
+}
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+     .bg{
+        background: blue;
     background-image: url("./asset/bg.jpg");
     width: 100%;
     height: 100dvh;
@@ -8,42 +90,42 @@
   font-weight: 700;
   font-style: normal;
 }
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .card1{
-        width: 65% !important;
-        height: 75%;
-        background: white;
-    }
-    .posepic{
-        border-radius: 15px;
-        height: 50dvh;
-        min-width: auto;
-    }
+.card1{
+    width: 65% !important;
+    height: 75%;
+    background: white;
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {...}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {...}
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .card1{
-        width: 65% !important;
-        height: 75%;
-        background: white;
-    }
-    .posepic{
-        border-radius: 15px;
-        height: 95%;
-        margin-left: -30%;
-        min-width: auto;
-    }
-    
+.posepic{
+    border-radius: 10px;
+    height: 95%;
+    margin-left: -40% !important;
+    width: 210px;
 }
+ }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+     .bg{
+        background-size: cover;
+    background-image: url("./asset/bg.jpg");
+    width: 100%;
+    height: 100dvh;
+    object-fit: fill;
+    font-family: "Dosis", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.card1{
+    width: 65% !important;
+    height: 75%;
+    background: white;
+}
+.posepic{
+    padding: 0px !important;
+    border-radius: 10px;
+    height: 95%;
+    margin-left: -80% !important;
+    width: auto;
+}
+ }
