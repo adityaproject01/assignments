@@ -1,4 +1,14 @@
-.imageBody{
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  .nm{
+    display: none;
+  }
+  .mtb{
+    margin-bottom: 1.4em !important;
+  }
+
+  .imageBody{
     width: 100%;
     height: 100dvh;
     box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 10%) !important;
@@ -24,22 +34,26 @@
   }
   .sessionTitle{
     font-family: "Rasa", serif;
-    /* font-weight: 500;
     line-height: 38px;
-    letter-spacing: 1px; */
   }
   .fadedBlue{
+    height: 60%;
     background:   #5E90C2;
   }
+  .fadedBlue2{
+    height: 60%;
+    background:   #5E90C2;
+  }
+  
 .h2{
     font-family: "Rasa", serif;
   }
   .sectionDescp18{
-    font-size: 18px;
+    font-size: 10px;
   }
   .sectionDesc{
     font-weight: 400;
-    font-size: 1.375rem;
+    font-size: 26px;
     line-height: 29px;
     font-family: "Roboto", sans-serif;
   }
@@ -82,5 +96,331 @@
     
 }
 .greengrass{
+    height: 58%;
     background: #6EA758;
 }
+
+.Arimo{
+  font-size: Arimo, sans-serif;
+}
+ }
+
+
+
+/* md */
+@media (min-width: 768px) { 
+  .mtb{
+    margin-bottom: 22px !important;
+  }
+
+  
+
+  .imageBody{
+    width: 100%;
+    height: 100dvh;
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 10%) !important;
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    object-fit: cover;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    padding-top: 2px;
+  }
+  .session1{
+    padding:   8.25rem 0 8.25rem 0;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+      pointer-events: none;
+  }
+  .text-green{
+    color: #6FA754;
+  }
+  .sessionTitle{
+    font-family: "Rasa", serif;
+    line-height: 38px;
+  }
+  .fadedBlue{
+    height: 60%;
+    background:   #5E90C2;
+  }
+  .fadedBlue2{
+    height: 50%;
+    background:   #5E90C2;
+  }
+  .mtb2{
+    margin-bottom: 0px !important;
+  }
+  
+.h2{
+    font-family: "Rasa", serif;
+  }
+  .sectionDescp18{
+    font-size: 10px;
+  }
+  .sectionDesc{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 29px;
+    font-family: "Roboto", sans-serif;
+  }
+  .spanP{
+    color:#212529;
+    text-decoration: none;
+  }
+  .spanA{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .spanP:hover{
+    color: #f15e70;
+  }
+   .spanA:hover{
+    color: #f15e70;
+  }
+  .list-group-item{
+    color: white !important;
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .gravel{
+    background-color: #474849;
+  }
+  .bottomContent{
+    min-height: 19rem;
+
+  }
+  .bottomContentline{
+    border-bottom: 1px solid #6FA754 ;
+    border-top: 1px solid #6FA754;
+  }
+  .w90per {
+    width: 90% !important;
+}
+.card-container{
+    height: 45.625rem;
+    
+}
+.greengrass{
+  height: 57.1%;
+    background: #6EA758;
+}
+
+.Arimo{
+  font-size: Arimo, sans-serif;
+}
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+  .mtb{
+    margin-bottom: 3.7rem !important;
+  }
+
+  .imageBody{
+    width: 100%;
+    height: 100dvh;
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 10%) !important;
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    object-fit: cover;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    padding-top: 2px;
+  }
+  .session1{
+    padding:   8.25rem 0 8.25rem 0;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+      pointer-events: none;
+  }
+  .text-green{
+    color: #6FA754;
+  }
+  .sessionTitle{
+    font-family: "Rasa", serif;
+    line-height: 38px;
+  }
+  .fadedBlue{
+    height: 60%;
+    background:   #5E90C2;
+  }
+  .fadedBlue2{
+    height: 53.4%;
+    background:   #5E90C2;
+  }
+  
+  
+.h2{
+    font-family: "Rasa", serif;
+  }
+  .sectionDescp18{
+    font-size: 10px;
+  }
+  .sectionDesc{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 29px;
+    font-family: "Roboto", sans-serif;
+  }
+  .spanP{
+    color:#212529;
+    text-decoration: none;
+  }
+  .spanA{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .spanP:hover{
+    color: #f15e70;
+  }
+   .spanA:hover{
+    color: #f15e70;
+  }
+  .list-group-item{
+    color: white !important;
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .gravel{
+    background-color: #474849;
+  }
+  .bottomContent{
+    min-height: 19rem;
+
+  }
+  .bottomContentline{
+    border-bottom: 1px solid #6FA754 ;
+    border-top: 1px solid #6FA754;
+  }
+  .w90per {
+    width: 90% !important;
+}
+.card-container{
+    height: 45.625rem;
+    
+}
+.greengrass{
+    height: 60.5%;
+    background: #6EA758;
+}
+
+.Arimo{
+  font-size: Arimo, sans-serif;
+}
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  .mtb{
+    margin-bottom: 4.7rem !important;
+  }
+
+  .imageBody{
+    width: 100%;
+    height: 100dvh;
+    box-shadow: inset 0 0 0 2000px rgb(0 0 0 / 10%) !important;
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    object-fit: cover;
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    padding-top: 2px;
+  }
+  .session1{
+    padding:   8.25rem 0 8.25rem 0;
+  }
+  
+  .dropdown>.dropdown-toggle:active {
+      pointer-events: none;
+  }
+  .text-green{
+    color: #6FA754;
+  }
+  .sessionTitle{
+    font-family: "Rasa", serif;
+    line-height: 38px;
+  }
+  .fadedBlue{
+    height: 60%;
+    background:   #5E90C2;
+  }
+  .fadedBlue2{
+    height: 52.3%;
+    background:   #5E90C2;
+  }
+  
+.h2{
+    font-family: "Rasa", serif;
+  }
+  .sectionDescp18{
+    font-size: 10px;
+  }
+  .sectionDesc{
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 29px;
+    font-family: "Roboto", sans-serif;
+  }
+  .spanP{
+    color:#212529;
+    text-decoration: none;
+  }
+  .spanA{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .spanP:hover{
+    color: #f15e70;
+  }
+   .spanA:hover{
+    color: #f15e70;
+  }
+  .list-group-item{
+    color: white !important;
+    background-color: transparent !important;
+    border: none !important;
+  }
+  .gravel{
+    background-color: #474849;
+  }
+  .bottomContent{
+    min-height: 19rem;
+
+  }
+  .bottomContentline{
+    border-bottom: 1px solid #6FA754 ;
+    border-top: 1px solid #6FA754;
+  }
+  .w90per {
+    width: 90% !important;
+}
+.card-container{
+    height: 45.625rem;
+    
+}
+.greengrass{
+    height: 63.5%;
+    background: #6EA758;
+}
+
+.Arimo{
+  font-size: Arimo, sans-serif;
+}
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { ... }
