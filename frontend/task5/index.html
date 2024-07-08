@@ -46,7 +46,7 @@
                                             <div class="col-md-6 col-xxl-6">
                                                 <div class="form-group mt-4">
                                                     <input type="number" pattern="/^-?\d+\.?\d*$/"
-                                                        onKeyPress="if(this.value.length==10) return false;" id="age"
+                                                        onKeyPress="if(this.value.length==10) return false;"
                                                         class="form-control" required id="phoneNumber"
                                                         placeholder="Enter the mobile Number">
                                                 </div>
@@ -93,8 +93,7 @@
                                                 <div class="form-group mt-4">
                                                     <input type="number" pattern="/^-?\d+\.?\d*$/"
                                                         onKeyPress="if(this.value.length==2) return false;" id="age"
-                                                        class="form-control" required id="age"
-                                                        placeholder="Enter your age">
+                                                        class="form-control" required placeholder="Enter your age">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-xxl-6">
@@ -137,7 +136,6 @@
 
     <script>
         function handleForm(e) {
-            let finalPass = "";
             e.preventDefault();
             let userData = {};
             userData.name = document.getElementById('name').value;
@@ -148,24 +146,36 @@
             userData.confirmPassword = document.getElementById('confirmPassword').value;
             userData.age = document.getElementById('age').value;
             userData.dob = document.getElementById('dob').value;
-            if (upassword.value === confirmPassword.value) {
-                finalPass = upassword;
-            } else {
-                alert("Try again, password is not matching")
+
+            if (userData.upassword !== userData.confirmPassword) {
+                alert("Passwords do not match. Please try again.");
+                return;
             }
+
             if (userData.name === '' || userData.phoneNumber === '' || userData.email === '' ||
                 userData.selectState === '' || userData.upassword === '' ||
                 userData.confirmPassword === '' || userData.age === '' || userData.dob === '') {
                 alert('Please fill out all fields');
                 return;
-            } console.log(finalPass.value);
+            }
+
+            console.log('User Data:', userData);
         }
+
         var inputAge = document.getElementById('age');
         inputAge.onkeydown = function (event) {
             if (isNaN(event.key) && event.key !== 'Backspace') {
                 event.preventDefault();
             }
         };
+
+        var inputPhoneNumber = document.getElementById('phoneNumber');
+        inputPhoneNumber.onkeydown = function (event) {
+            if (isNaN(event.key) && event.key !== 'Backspace') {
+                event.preventDefault();
+            }
+        };
+
         let today = new Date().toISOString().slice(0, 10);
         document.getElementById("dob").max = today;
 
@@ -176,27 +186,14 @@
 
             if (fileUploadInput.files && fileUploadInput.files[0]) {
                 const file = fileUploadInput.files[0];
-                console.log(file, "sdfas")
+
                 if (file.type.startsWith('image/')) {
                     const reader = new FileReader();
 
                     reader.onload = function (e) {
                         previewImage.src = e.target.result;
                         fileError.textContent = '';
-                        let url = file.name;
-                        console.image = function (url, size = 100) {
-                            const image = new Image();
-                            image.src = url;
-                            image.onload = function () {
-                                var style = [
-                                    'font-size: 1px;',
-                                    'padding: ' + this.height / 100 * size + 'px ' + this.width / 100 * size + 'px;',
-                                    'background: url(' + url + ') no-repeat;',
-                                    'background-size: contain;'
-                                ].join(' ');
-                                console.log('%c ', style);
-                            };
-                        };
+                        console.log('Preview Image:', e.target.result);
                     };
 
                     reader.readAsDataURL(file);
@@ -209,9 +206,8 @@
                 previewImage.src = '';
             }
         }
-
-
     </script>
+
 
 </body>
 
